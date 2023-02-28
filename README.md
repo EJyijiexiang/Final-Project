@@ -1,4 +1,5 @@
 # Final-Project
+# This is a computer game. My game will involve two elements: coin, and dies. The player can flip a coin at the beginning. If head, they will roll a 6-side die, which may have sides (1,2,3,4,5,6). If tail, they will roll a 4-side die, (1,2,3,4). If the first roll rolled 1,2, or 3, they can roll the same die 3 more times. If the first roll rolled 4,5, or 6, they can roll the same die 2 more times. Each round's roll will be cumulatively calculated. In the end, if the sum is greater than or equal to 10, they won. Otherwise, they lost. 
 print("Welcome to the Coins and Dies Game!")
 print("First Step - Flip a Coin. If head, you can choose 6-side die. If tail, you can choose 4-side die")
 
