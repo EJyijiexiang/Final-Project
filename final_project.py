@@ -5,12 +5,10 @@ while True:
     qs=input()
     if qs.lower() == "yes":
         break
-    elif qs.lower() == "no":
-        print("This is not the answer")
     else:
         print("This is not the answer")
 
-print("First Step - Flip a Coin. If head, you can choose 6-side die. If tail, you can choose 4-side die")
+print("First Step - Flip a Coin. If head, you will use a 6-side die. If tail, you will use a 4-side die")
 
 while True:
     print("Are you ready to flip a coin? Answer Y or N")
@@ -63,8 +61,10 @@ if die_choice=="6-side die":
     print("The die landed on"+" "+str(die6))
     print("If the die lands on [1,2,or 3], you can roll 3 more times. If the die lands on [4,5,or 6], you can roll 2 more times")
     if die6<=3:
+        r=3
         print("Now You can roll 3 more times")
     else:
+        r=2
         print("Now You can roll 2 more times")
 elif die_choice=="4-side die":
     def roll4die():
@@ -74,8 +74,10 @@ elif die_choice=="4-side die":
     print("The die landed on"+" "+str(die4))
     print("If the die lands on [1,2,or 3], you can roll 3 more times. If the die lands on [4], you can roll 2 more times")
     if die4<=3:
+        r=3
         print("Now You can roll 3 more times")
     else:
+        r=2
         print("Now You can roll 2 more times")
 
 while True:
@@ -87,13 +89,23 @@ while True:
         print("This is not the answer")
 
 if die_choice=="6-side die":
-    rolls=int(input("How many time can you roll? Enter 2 or 3 "))
+    while True:
+        rolls=int(input("How many time can you roll? Enter 2 or 3 "))
+        if rolls==r:
+            break
+        else:
+            print("Enter your true number of rolls")
     while rolls:
         x=random.randint(1,6)
         rolls -= 1
         roll.append(x)
 elif die_choice=="4-side die":
-    rolls=int(input("How many time can you roll? Enter 2 or 3 "))
+    while True:
+        rolls=int(input("How many time can you roll? Enter 2 or 3 "))
+        if rolls==r:
+            break
+        else:
+            print("Enter your true number of rolls")
     while rolls:
         y=random.randint(1,4)
         rolls -= 1
