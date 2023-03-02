@@ -1,5 +1,5 @@
-print("Welcome to the Coins and Dies Game!")
-print("First Step - Flip a Coin. If head, you can choose 6-side die. If tail, you can choose 4-side die")
+print("Welcome to the Coins and Dice Game!")
+print("First Step - Flip a Coin. If heads, you can choose 6-side die. If tails, you can choose 4-side die")
 
 import random
 
