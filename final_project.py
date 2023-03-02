@@ -129,7 +129,10 @@ if totalsum >= 10:
 else:
     print("Sorry, you lost.")
 
-
+#I think more information should be given at the start of the game about the games objectives and how you win.
+#I know that the coin will either be heads or tails but I think it would be cool if the user got to input something that actually flipped the coin rather than just saying what it landed on
+#I don't understand why we are given an option of 2 or 3 roles, why would you choose 2?
+#The code all works well, but I think you could add more strategy for the user
 
 
 
