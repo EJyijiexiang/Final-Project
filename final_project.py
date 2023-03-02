@@ -6,7 +6,7 @@ while True:
     if qs.lower() == "yes":
         break
     else:
-        print("This is not the answer")
+        print("This is not the answer, try again")
 
 print("First Step - Flip a Coin. If head, you will use a 6-side die. If tail, you will use a 4-side die")
 
@@ -16,7 +16,7 @@ while True:
     if qs.lower() == "y":
         break
     else:
-        print("This is not the answer")
+        print("This is not the answer,try again")
 
 import random
 
@@ -26,12 +26,12 @@ coin=flip_coin()
 print("The coin landed on"+" "+coin)
 
 while True:
-    print("Are you ready to check your die? Answer Y or N")
+    print("Are you ready to check which die you will use? Answer Y or N")
     qs=input()
     if qs.lower() == "y":
         break
     else:
-        print("This is not the answer")
+        print("This is not the answer,try again")
 
 if coin == "Head":
     die_choice="6-side die"
@@ -45,12 +45,12 @@ elif die_choice=="4-side die":
     print("4-side die will have 6 sides, you will have chance to lands on [1,2,3,4]")
 
 while True:
-    print("Are you ready to roll the selected die? Answer Y or N")
+    print("Are you ready to roll the first round using selected die? Answer Y or N")
     qs=input()
     if qs.lower() == "y":
         break
     else:
-        print("This is not the answer")
+        print("This is not the answer,try again")
 
 roll=[]
 if die_choice=="6-side die":
@@ -86,7 +86,7 @@ while True:
     if qs.lower() == "y":
         break
     else:
-        print("This is not the answer")
+        print("This is not the answer,try again")
 
 if die_choice=="6-side die":
     while True:
@@ -105,7 +105,7 @@ elif die_choice=="4-side die":
         if rolls==r:
             break
         else:
-            print("Enter your true number of rolls")
+            print("Please enter your true number of the rolls")
     while rolls:
         y=random.randint(1,4)
         rolls -= 1
@@ -118,7 +118,7 @@ while True:
     if qs.lower() == "y":
         break
     else:
-        print("This is not the answer")
+        print("This is not the answer,try again")
 
 totalsum=sum(roll)
 print("Your total score is"+" "+ str(totalsum))
