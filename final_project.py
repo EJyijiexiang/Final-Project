@@ -42,7 +42,7 @@ print("You will use a "+" "+ die_choice)
 if die_choice=="6-side die":
     print("6-side die will have 6 sides, you will have chance to lands on [1,2,3,4,5,6]")
 elif die_choice=="4-side die":
-    print("4-side die will have 6 sides, you will have chance to lands on [1,2,3,4]")
+    print("4-side die will have 4 sides, you will have chance to lands on [1,2,3,4]")
 
 while True:
     print("Are you ready to roll the first round using selected die? Answer Y or N")
@@ -89,23 +89,13 @@ while True:
         print("This is not the answer,try again")
 
 if die_choice=="6-side die":
-    while True:
-        rolls=int(input("How many time can you roll? Enter 2 or 3 "))
-        if rolls==r:
-            break
-        else:
-            print("Enter your true number of rolls")
+    rolls = r
     while rolls:
         x=random.randint(1,6)
         rolls -= 1
         roll.append(x)
 elif die_choice=="4-side die":
-    while True:
-        rolls=int(input("How many time can you roll? Enter 2 or 3 "))
-        if rolls==r:
-            break
-        else:
-            print("Please enter your true number of the rolls")
+    rolls = r
     while rolls:
         y=random.randint(1,4)
         rolls -= 1
