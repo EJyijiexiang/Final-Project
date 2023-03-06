@@ -8,7 +8,7 @@ while True:
     else:
         print("This is not the answer, try again")
 
-print("First Step - Flip a Coin. If HEAD, you will use a 6-side die. If TAIL, you will use a 4-side die")
+print("First Step - Flip a Coin. If HEAD, you will use a 6-side die. If TAIL, you will use a 4-side die.")
 
 while True:
     print("Are you ready to flip a coin? Answer Y or N")
