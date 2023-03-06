@@ -1,4 +1,6 @@
 print("Welcome to the Coins and Dies Game!")
+print("Please enter your user name")
+user=input()
 
 while True:
     print("Are you ready for the game? Answer Yes or No")
@@ -119,10 +121,11 @@ if totalsum >= 10:
 else:
     print("Sorry, you lost.")
 
-
-
-
-
+with open("result.txt", 'a') as f:
+        if totalsum >= 10:
+            f.write(user + " win the game\n")
+        else:
+            f.write(user + " lost the game\n")
 
 
 
